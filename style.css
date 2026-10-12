@@ -962,6 +962,10 @@ section {
         linear-gradient(145deg, #111927, #0d131e);
 }
 
+.project-card .project-tech-section {
+    padding: 38px 0 0;
+}
+
 .project-title {
     font-size: clamp(1.35rem, 3vw, 1.9rem);
     letter-spacing: -0.04em;
