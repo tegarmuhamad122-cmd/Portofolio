@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegar Muhamad Ikhsan | Software &amp; IoT Developer</title>
+    <meta name="description" content="Portofolio Rekayasa Perangkat Lunak &amp; Proyek IoT Smart RFID Lab Locker System oleh Tegar Muhamad Ikhsan.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Hubungkan ke File style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="container nav-wrap">
+            <a href="#" class="brand">
+                <div class="brand-badge">G</div>
+                <span>Garrr Dev</span>
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#projects">Proyek Unggulan</a></li>
+                    <li><a href="#skills">Tech Stack</a></li>
+                    <li><a href="https://github.com/tegarmuhamad122-cmd" target="_blank" class="nav-btn-github">GitHub ↗</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- HERO SECTION -->
+        <section class="hero" id="about">
+            <div class="badge-status">
+                <span class="status-dot"></span>
+                <span>Open for Software &amp; IoT Collaboration</span>
+            </div>
+            
+            <h1>Halo, Saya <span class="text-gradient">Tegar Muhamad Ikhsan</span></h1>
+            
+            <p class="hero-desc">
+                Saya adalah pengembang sistem perangkat lunak dan <strong>Internet of Things (IoT)</strong>. Berfokus pada perancangan firmware embedded <strong>C++ (ESP32)</strong>, integrasi sensor &amp; aktuator, arsitektur web backend <strong>PHP &amp; MySQL</strong>, serta komunikasi Machine-to-Machine yang andal dan aman melalui <strong>RESTful API</strong>.
+            </p>
+            
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">Lihat Proyek Utama 🚀</a>
+                <a href="https://github.com/tegarmuhamad122-cmd" target="_blank" class="btn btn-outline">Profil GitHub 💻</a>
+            </div>
+        </section>
+
+        <!-- FEATURED PROJECT -->
+        <section id="projects">
+            <div class="section-header">
+                <h2 class="section-title">📂 Proyek Rekayasa Perangkat Lunak</h2>
+                <p class="section-subtitle">Implementasi sistem kendali perangkat keras terintegrasi dan manajemen data web</p>
+            </div>
+
+            <article class="project-card">
+                <div class="project-header">
+                    <div>
+                        <span class="project-category">Embedded IoT &bull; Full-Stack Web</span>
+                        <h3 class="project-title">Smart RFID Lab Locker System Using ESP32</h3>
+                        <p class="project-tagline">
+                            Sistem Otomatisasi Peminjaman &amp; Pengamanan Inventaris Laboratorium Jaringan Komputer
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-tags">
+                    <span class="tag">C++ / Arduino</span>
+                    <span class="tag">ESP32 SoC</span>
+                    <span class="tag">PHP 8 Native</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">REST API (JSON)</span>
+                    <span class="tag">RC522 RFID (SPI)</span>
+                    <span class="tag">Reed Switch Sensor</span>
+                    <span class="tag">Solenoid Actuator</span>
+                </div>
+
+                <div class="project-desc-block">
+                    <p>
+                        Aplikasi perangkat lunak terintegrasi yang menggabungkan kontrol logika firmware pada mikrokontroler ESP32 dengan web dashboard administrator berbasis PHP 8 dan MySQL. Sistem ini dirancang untuk mendigitalkan dan mengotomatisasi proses peminjaman alat laboratorium jaringan komputer yang sebelumnya dilakukan secara manual.
+                    </p>
+                    
+                    <p>
+                        Autentikasi fisik memanfaatkan kartu RFID MIFARE (13.56 MHz) untuk membuka solenoid door lock 12V secara otomatis, sementara status fisik pintu loker dipantau secara presisi menggunakan sensor magnetik reed switch.
+                    </p>
+                    
+                    <p>
+                        Setiap transaksi peminjaman dan pengembalian diverifikasi oleh server pusat melalui protokol HTTP POST REST API dengan enkripsi header <code>X-Device-Token</code>, sekaligus mencatat metrik latensi respon sistem (dalam milidetik) ke dalam basis data dan arsip digital.
+                    </p>
+                </div>
+
+                <div class="project-specs">
+                    <div class="spec-item">
+                        <h4>Arsitektur Sistem</h4>
+                        <p>IoT M2M + Web Client-Server</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Protokol Komunikasi</h4>
+                        <p>HTTP POST (REST API Payload JSON)</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Keamanan Akses</h4>
+                        <p>Header X-Device-Token &amp; Bcrypt</p>
+                    </div>
+                    <div class="spec-item">
+                        <h4>Pencatatan Data</h4>
+                        <p>Dual-Database (Live &amp; Arsip) + CSV</p>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/tegarmuhamad122-cmd/rfid-smart-locker" target="_blank" class="btn btn-primary">
+                        <span>Repositori Kode Sumber 📂</span>
+                    </a>
+                    <a href="https://lair-bacteria-latticed.ngrok-free.dev/rfid-smart-locker/" target="_blank" class="btn btn-outline">
+                        <span>Live Prototype Demo ⚡</span>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <!-- TECH STACK & SKILLS -->
+        <section id="skills">
+            <div class="section-header">
+                <h2 class="section-title">🛠️ Keahlian &amp; Teknologi</h2>
+                <p class="section-subtitle">Kompetensi teknis dalam rekayasa perangkat lunak dan arsitektur IoT</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <span class="skill-icon">⚡</span>
+                    <h3>Embedded &amp; IoT</h3>
+                    <ul>
+                        <li>C / C++ (PlatformIO &amp; Arduino IDE)</li>
+                        <li>ESP32 Dual-Core SoC &amp; ESP8266</li>
+                        <li>Sensor RFID RC522 (SPI) &amp; LCD 16x2 (I2C)</li>
+                        <li>Reed Switch, Relay 5V &amp; Solenoid Lock</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🌐</span>
+                    <h3>Backend &amp; Database</h3>
+                    <ul>
+                        <li>PHP 8 (Arsitektur Modular &amp; Secure Session)</li>
+                        <li>MySQL / MariaDB Relational Database</li>
+                        <li>RESTful API Endpoints (M2M JSON Parsing)</li>
+                        <li>Bcrypt Password Hashing &amp; Token Auth</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🎨</span>
+                    <h3>Frontend Web</h3>
+                    <ul>
+                        <li>HTML5 Semantic &amp; Responsive Layout</li>
+                        <li>Modern CSS3 (Flexbox, CSS Grid &amp; Glassmorphism)</li>
+                        <li>JavaScript (ES6+, Fetch API &amp; Live Search)</li>
+                        <li>Admin Dashboard UI &amp; Data Tables</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🔧</span>
+                    <h3>Tools &amp; Workflow</h3>
+                    <ul>
+                        <li>Git &amp; GitHub Version Control</li>
+                        <li>Ngrok &amp; Tunneling Infrastructure</li>
+                        <li>Wokwi Circuit Simulator &amp; Fritzing</li>
+                        <li>XAMPP, Apache &amp; Linux Environments</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <p>
+                &copy; 2026 <strong>Tegar Muhamad Ikhsan</strong> &bull; Software &amp; IoT Engineering Showcase.
+            </p>
+            <p class="footer-meta">
+                Dihosting di <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> &bull; Domain Terdaftar via <a href="https://is-a.dev" target="_blank">is-a.dev</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
